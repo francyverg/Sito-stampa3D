@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D printing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="myscript.js"></script>
+  <!-- AOS library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <div class="container-fluid justify-content-center" style="font-size:1.3rem;">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+	      <a class="nav-link active dropdown-toggle" href="#0" id="navbardrop" data-toggle="dropdown">I materiali</a>
+	      <div class="dropdown-menu">
+					<a class="dropdown-item" href="#0">Top page</a>
+	      </div>
+	    </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<a name="0"></a>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <!-- Slides -->
+  <div class="carousel-inner" style="height: 63rem">
+    <div class="carousel-item active">
+      <img src="img/material/material-fdm-hd.jpg" alt="3D printer" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem; color:black">3D printing</h1>
+        <h3 style="color:black">A new way to create the world</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/material/vasi.jpg" alt="SLA printer" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem">New technologies</h1>
+        <h3>For any shape, for any material</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/material/chattanooga.jpg" alt="3d printed house" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem">Buildings</h1>
+        <h3>The new horizon of architecture</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/material/3d-printed-iron.jpg" alt="3d printed heart" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem">Surgery</h1>
+        <h3>Recreating the human body</h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
+<div class="container-fluid">
+
+<!-- Materials presentation -->
+<a name="1"></a>
+  <div style="padding-top: 3rem; padding-bottom: 3rem; padding-left: 28rem; padding-right: 28rem;">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <h1 class="h1style">I materiali</h1>
+    </div>
+  </div>
+</div>	
+</div>	
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Sito eseguito per l'esposizione al colloquio di maturità da:
+      </p>
+			<ul class="no-bullets">
+        <li>
+        	<p>Silvia Ferrari</p>
+        </li>
+        <li>
+          <p>Elisa Romano</p>
+        </li>
+        <li>
+          <p>Francesca Vergallo</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section: Links -->
+    <section class="">
+      <div class="row">
+        <!-- 
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div> 
+				-->
+      </div>
+    </section>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+</footer>
+		
+<!-- Library initialization NON SPOSTARLO DAL FONDO DEL FILE --> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
