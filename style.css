@@ -23,6 +23,26 @@
   border-color: #0252ff;
 }
 
+.container_list {
+  padding-left: 28rem; 
+	padding-right: 28rem;
+}	
+.image_list {
+  float: left;
+	margin: 1rem;
+}
+.text_list {
+  display: inline;
+	text-align: justify;
+	padding-top: 1rem;
+}
+
+.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /*time-line*/
 * {
   box-sizing: border-box;
@@ -62,9 +82,9 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -20px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 0.3rem solid #FF9F55;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
