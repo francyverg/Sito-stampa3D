@@ -474,4 +474,480 @@ La post-produzione può essere costosa, soprattutto se eseguita a mano, insosten
   AOS.init();
 </script>
 </body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>3D printing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+  <!-- AOS library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand bg-dark navbar-dark fixed-top">
+  <div class="container-fluid justify-content-center" style="font-size:1.3rem;">
+    <ul class="navbar-nav">
+      <!--<li class="nav-item">
+        <a class="nav-link active" href="#0">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#1">Story</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#2">Techonoligies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#3">FDM process</a>
+      </li>-->
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">Home</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#0">Top page</a>
+          <a class="dropdown-item" href="#1">La storia</a>
+          <a class="dropdown-item" href="#2">Le tecnologie</a>
+          <a class="dropdown-item" href="#3">Come si stampa?</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="materials.html">I materiali</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<a name="0"></a>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <!-- Slides -->
+  <div class="carousel-inner" style="height: 63rem">
+    <div class="carousel-item active">
+      <img src="img/wallpaper.jpg" alt="3D printer" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem; color:black">3D printing</h1>
+        <h3 style="color:black">A new way to create the world</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/sla-wallpaper.jpg" alt="SLA printer" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem">New technologies</h1>
+        <h3>For any shape, for any material</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/3d-house-wallaper.jpg" alt="3d printed house" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem">Buildings</h1>
+        <h3>The new horizon of architecture</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/3d-heart.jpg" alt="3d printed heart" class="d-block img-fluid" style="width:100%; height:63rem">
+      <div class="carousel-caption">
+        <h1 class=text-uppercase style="font-size: 5rem">Surgery</h1>
+        <h3>Recreating the human body</h3>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  </div>
+
+  <div class="container-fluid">
+
+<!-- Timeline -->
+<a name="1"></a>
+  <div style="padding-top: 3rem; padding-bottom: 3rem">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <h1 class="h1style">Uno sguardo alla storia</h1>
+    </div>
+  </div>
+  <div class="timeline time-body">
+    <div class="time-container left">
+      <div class="time-content">
+        <h2>1982</h2>
+        <p>Nasce ufficialmente nel 1982, quando il signor Chuck Hull inventò la stereolitografia e il formato STL (approfonditi in seguito). Nel 1986 fondandò la 3DSystems, dando vita al primo esempio commerciale di rapid prototyping.</p>
+      </div>
+    </div>
+    <div class="time-container right">
+      <div class="time-content">
+        <h2>1986</h2>
+        <p>Nel 1986 Deckard, Beaman e Forderhase svilupparono la selective laser sintering, un processo simile al precedente, ma utilizzarono il nylon (polvere) al posto della resina (liquido). Il nyolon essendo solido non necessita supporti, con molti vantaggi pratici.</p>
+      </div>
+    </div>
+    <div class="time-container left">
+      <div class="time-content">
+        <h2>1988</h2>
+        <p>Nel 1988 Crump brevettò la Fused Deposition Modeling, utilizzando plastica fusa da “spalmare” strato per strato, secondo la logica del principio additivo.</p>
+      </div>
+    </div>
+    <div class="time-container right">
+      <div class="time-content">
+        <h2>1993</h2>
+        <p>Nel 1993 il MIT sviluppò la prima tecnologia di stampa a colori, mentre nel 1995 i tedeschi del Fraunhofer Institute, con l'uso del laser, iniziarono a fondere polveri di metalli, producendo oggetti di qualità comparabile all’industria tradizionale.</p>
+      </div>
+    </div>
+    <div class="time-container left">
+      <div class="time-content">
+        <h2>2005</h2>
+        <p>Nel 2005 avvenne un cambio di paradigma: col principio del Self replicating rapid Prototyper, si riuscì a stampare una stampante 3D. Apparentemente banale, questo avvenimento equivale a dare in mano a migliaia di giovani progettisti e sognatori le chiavi per sviluppare la propria passione.</p>
+      </div>
+    </div>
+    <div class="time-container right">
+      <div class="time-content">
+        <h2>2008</h2>
+        <p>Nel 2008 la MakerBot Industries produsse la prima stampante acquistabile in scatola (kit) di montaggio. Nel 2010 la NASA afferma di voler costruire case su Marte utilizzando il contour crafting, una stampa 3D che utilizza il cemento come materiale.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Cards --> 
+<a name="2"></a>  
+  <div style="padding-top: 3rem; padding-bottom: 3rem">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <h1 class="h1style">Le tecnologie</h1>
+    </div>
+  </div>
+		
+<div class="container">	
+  <div class="row">
+		<!-- SLA card -->
+		<div class="col-6 col-md-4">
+  		<div class="card" style="width:23rem;"> 
+				<img src="img/SLA-3D-Printing.jpg" class="card-img-top" alt="SLA 3d printer">
+    		<div class="card-body">
+		      <h5 class="card-title">SLA</h5>
+		      <p class="card-text">Per prototipi ad alta precisione, isotropici e impermeabili.</p>
+		
+		      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-sla">
+		        Scopri di più
+		      </button>
+		      
+		      <!-- Modal -->
+		      <div class="modal fade" id="modal-sla" tabindex="-1" aria-hidden="true">
+		        <div class="modal-dialog modal-dialog-centered">
+		          <div class="modal-content">
+		            <div class="modal-header">
+		              <h5 class="modal-title">Stereolitografia</h5>
+		              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		            </div>
+		            <div class="modal-body">
+									<img src="img/sla-structure.jpg" class="card-img-top" alt="SLA 3d printer">
+		              <p style="text-align:justify;">La stereolitografia appartiene alla famiglia delle tecnologie di produzione additiva, anche conosciuta come fotopolimerizzazione in vasca. Questi apparecchi sono costruiti in base allo stesso principio usando una fonte di luce (un fascio laser o un proiettore) per polimerizzare la resina liquida e trasformarla in plastica dura. La principale differenza fisica consiste nella disposizione dei componenti principali quali la fonte di luce, la piattaforma di stampa e il serbatoio resina. Le stampanti 3D SLA usano materiali termoindurenti e reattivi alla luce chiamati "resine". Quando le resine per stereolitografia vengono esposte alla luce con una determinata lunghezza d'onda, brevi catene molecolari si uniscono, polimerizzando i monomeri e gli oligomeri in geometrie solidificate rigide o flessibili.</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+				</div>      
+    	</div>
+		</div>	
+		<!-- DLP card -->
+		<div class="col-6 col-md-4">
+	  	<div class="card" style="width: 23rem;">
+	    	<img src="img/dlp-3D-printer.jpg" class="card-img-top" alt="SLA 3d printer">
+	    	<div class="card-body">
+	      	<h5 class="card-title">DLP</h5>
+	      	<p class="card-text">L'evoluzione alternativa della stereolitografia.</p>
+	
+		      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-dlp">
+		        Scopri di più
+		      </button>
+		      
+		      <!-- Modal -->
+		      <div class="modal fade" id="modal-dlp" tabindex="-1" aria-hidden="true">
+		        <div class="modal-dialog modal-dialog-centered">
+		          <div class="modal-content">
+		            <div class="modal-header">
+		              <h5 class="modal-title">Digital Light Processing</h5>
+		              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		            </div>
+		            <div class="modal-body">
+									<img src="img/dlp-structure.jpg" class="card-img-top" alt="SLA 3d printer">
+		              <p style="text-align:justify;">Proprio come le loro controparti SLA, le stampanti 3D DLP sono costruite attorno a un serbatoio resina con fondo trasparente e una piattaforma di stampa che viene immersa nel serbatoio resina per creare parti capovolte, strato dopo strato. La differenza consiste nella fonte di luce. Le stampanti 3D DLP utilizzano uno schermo di proiezione digitale per far lampeggiare l'immagine di ogni strato su tutta la piattaforma in una sola volta, polimerizzando tutti i punti allo stesso tempo. La luce viene riflessa su un Digital Micromirror Device (DMD), una maschera dinamica costituita da specchi di dimensioni microscopiche disposti in una matrice su un chip semiconduttore. Le coordinate in cui la resina liquida viene polimerizzata all'interno dello strato vengono stabilite dalla rapida commutazione di questi minuscoli specchi tra le lenti che dirigono la luce verso il fondo del serbatoio o un dissipatore di calore. Poiché il proiettore è uno schermo digitale, l'immagine di ogni strato è composta da pixel quadrati. Questo comporta la creazione di uno strato tridimensionale formato da piccoli cubetti rettangolari chiamati voxel.</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+				</div>    
+    	</div>
+		</div>	
+		<!-- FDM card -->
+		<div class="col-6 col-md-4">
+	  	<div class="card" style="width: 23rem;">
+		    <img src="img/fdm-3d-printing.jpg" class="card-img-top" alt="SLA 3d printer">
+		    <div class="card-body">
+		      <h5 class="card-title">FDM</h5>
+		      <p class="card-text">Alla portata di tutti, semplice ed economica.</p>
+		
+		      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-fdm">
+		        Scopri di più
+		      </button>
+		      
+		      <!-- Modal -->
+		      <div class="modal fade" id="modal-fdm" tabindex="-1" aria-hidden="true">
+		        <div class="modal-dialog modal-dialog-centered">
+		          <div class="modal-content">
+		            <div class="modal-header">
+		              <h5 class="modal-title">Fused Deposition Modeling</h5>
+		              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		            </div>
+		            <div class="modal-body">
+									<img src="img/fdm-structure.png" class="card-img-top" alt="fdm structure">
+		              <p style="text-align:justify;">La modellazione a deposizione fusa è la forma di stampa 3D più diffusa tra i consumatori. L'FDM funziona con l'estrusione di termoplastiche come l'ABS e il PLA mediante un ugello riscaldato che fonde il materiale e deposita la plastica, strato dopo strato, su una piattaforma di stampa. Gli strati vengono depositati uno alla volta, fino a completamento della parte. Questi tipi di stampante 3D sono particolarmente adatti per modelli Proof-of-Concept di base, nonché per la prototipazione rapida e a basso costo di parti semplici, come quelle che vengono normalmente lavorate.</p>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+				</div>      
+	    </div>
+	  </div>
+	</div>	
+</div>
+
+<div class="container position-relative">		
+  <div class="row" style="padding-top:2rem;">
+		<!-- SLS card -->
+		<div class="col-6 col-md-4">
+	    <div class="card" style="width: 23rem;">
+	      <img src="img/SLS-prints-from-Sinterit.jpg" class="card-img-top" alt="SLS 3d printer">
+	      <div class="card-body">
+	        <h5 class="card-title">SLS</h5>
+	        <p class="card-text">La padronanza dei metalli.</p>
+	
+	      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-sls">
+	        Scopri di più
+	      </button>
+	      
+	      <!-- Modal -->
+	      <div class="modal fade" id="modal-sls" tabindex="-1" aria-hidden="true">
+	        <div class="modal-dialog modal-dialog-centered">
+	          <div class="modal-content">
+	            <div class="modal-header">
+	              <h5 class="modal-title">Selective Laser Sintering</h5>
+	              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+								<img src="img/sls-structure.png" class="card-img-top" alt="fdm structure">
+	              <p style="text-align:justify;">La sinterizzazione laser selettiva (SLS) è una tecnologia di produzione additiva (AM) che usa un laser ad alta potenza per sinterizzare piccole particelle di polvere di polimero e trasformarle in una struttura solida basata su un modello 3D. Per decenni, la stampa 3D SLS è stata utilizzata spesso dagli ingegneri e dai produttori nello sviluppo dei prodotti. Il costo per unità ridotto, l'alta produttività e i materiali testati la rendono ideale per una serie di applicazioni, dalla prototipazione rapida fino alla produzione in piccoli lotti, ponte o su misura. Le recenti innovazioni in termini di meccanica, materiali e software hanno reso la stampa SLS accessibile a una vasta gamma di attività, consentendo a sempre più aziende di utilizzare questi strumenti che in precedenza erano alla portata solo di pochi settori altamente tecnologici.</p>
+	            </div>
+	          </div>
+	        </div>
+	      </div>  
+	    </div>
+		</div>		
+  </div>
+	<!-- CJP card -->
+		<div class="col-6 col-md-4">
+	    <div class="card" style="width: 23rem;">
+	      <img src="img/3Dprinter_cjp.jpg" class="card-img-top" alt="cjp 3d printer">
+	      <div class="card-body">
+	        <h5 class="card-title">CJP</h5>
+	        <p class="card-text">Per le stampe più colorate.</p>
+	
+	      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-cjp">
+	        Scopri di più
+	      </button>
+	      
+	      <!-- Modal -->
+	      <div class="modal fade" id="modal-cjp" tabindex="-1" aria-hidden="true">
+	        <div class="modal-dialog modal-dialog-centered">
+	          <div class="modal-content">
+	            <div class="modal-header">
+	              <h5 class="modal-title">Color Jet Printing</h5>
+	              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+								<img src="img/cjp-structure.png" class="card-img-top" alt="fdm structure">
+	              <p style="text-align:justify;">Inventata da ZCorp ricorda il processo delle stampanti a getto di inchiostro. Uno strato di polvere composita (simil gesso) dello spessore di circa 100 micron viene steso sul piatto di stampa mentre comuni testine HP fissano la polvere con leganti colorati o trasparenti creando un modello solido corrispondente al file caricato. Alta risoluzione, quadricromia, velocità di stampa sono le caratteristiche principali di questa tecnologia. Il successivo indurimento strutturale tramite impregnante migliora notevolmente le caratteristiche meccaniche del prodotto stampato anche se è consigliato utilizzare questi prodotti solo per uso estetico e non funzionale. Tra le tecnologie di stampa 3D a colori va citata anche la Selective Deposition Lamination (SDL), brevettata dall’azienda irlandese Mcor Technologies, capace di utilizzare dei fogli di carta A4 come materiale di base. Un processo di stampa a getto di inchiostro in quadricromia, incollaggio dei fogli e taglio strato dopo strato completano l’oggetto con costi di esercizio sicuramente inferiori.</p>
+	            </div>
+	          </div>
+	        </div>
+	      </div>     
+	    </div>
+		</div>		
+  </div>
+	<!-- 4D card -->
+		<div class="col-6 col-md-4">
+	    <div class="card" style="width: 23rem;">
+	      <img src="img/fiori-4d.jpg" class="card-img-top" alt="5D printer">
+	      <div class="card-body">
+	        <h5 class="card-title">Stampa 4D</h5>
+	        <p class="card-text">La nuova frontiera verso il controllo dei materiali.</p>
+	
+	      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-4d">
+	        Scopri di più
+	      </button>
+	      
+	      <!-- Modal -->
+	      <div class="modal fade" id="modal-4d" tabindex="-1" aria-hidden="true">
+	        <div class="modal-dialog modal-dialog-centered">
+	          <div class="modal-content">
+	            <div class="modal-header">
+	              <h5 class="modal-title">Stampa 4D</h5>
+	              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	            </div>
+	            <div class="modal-body">
+								<img src="img/stampa-4d.gif" class="card-img-top" alt="animation">
+	              <p style="text-align:justify;">Ad aprile 2013, Skylar Tibbits, fondatore del MIT Self-Assembly Lab, in una conferenza TEDx ha introdotto per la prima volta il concetto di stampa 4D. Ha spiegato che stampare in 4D è come aggiungere una nuova funzione a un materiale da utilizzare per la stampa 3D, in particolare la capacità di quel materiale di trasformarsi nel tempo. Infatti, grazie alla stampa 4D, un materiale può cambiare forma da solo, senza alcun intervento umano, ma semplicemente con l’influenza di fattori esterni quali luce, calore, vibrazioni, ecc. La stampa 4D è fortemente ispirata dal principio di auto-assemblaggio, un concetto ampiamente diffuso anche nella nanotecnologia. La stampa 4D quindi porta questo principio al livello successivo. Se è possibile per piccole strutture su scala microscopica assemblarsi e progredire da sole, perché non immaginarlo su oggetti stampati in 3D più grandi?</p>
+	            	</div>
+	          	</div>
+	        	</div>
+	      	</div>     
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+		
+<!-- FDM process --> 
+<a name="3"></a>  
+  <div style="padding-top: 3rem; padding-bottom: 2rem">
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <h1 class="h1style">Come si stampa in 3D?</h1>
+    </div>
+  </div>
+
+<div class="container_list">
+	<h2>1) Progettazione CAD</h2>
+  <img class="image_list" src="img/cad.png" style="width: 40rem;"/>
+  <div class="text_list">
+    <p>Per poter stampare in 3D un oggetto bisogna avere innanzi tutto un modello 3D, il quale viene prodotto con dei software di modellazione 3D come Blender, AutoCAD e OpenSCAD. Se non si hanno buone doti di modellazione è possibile scannerizzare gli oggetti con scanner 3D o trovare modelli già fatti online. La Computer-Aided Design (CAD) è la progettazione assistita dall’elaboratore, e si riferisce a quell’area dell’informatica che raggruppa tutti quei software di modellazione digitale nati per la progettazione di modelli in 3D. Permette così il render di un oggetto prima di toccarlo con mano. Il CAD è considerato come un linguaggio di programmazione orientato agli oggetti: il software lo legge per concepire un prodotto reale. Inoltre è possibile calcolare la resistenza di un oggetto, di migliorarlo, di perfezionare la scelta dei materiali, di simulare il costo di produzione e di adattarne le caratteristiche in funzione del budget ecc…</p>
+    <p>Se all’origine i software CAD erano usati principalmente in campo militare,  si sono poi diffusi in numerosi altri settori. Grazie ai progressi tecnologici degli ultimi anni, come quelli nella stampa 3D, questa tecnologia si è diffusa sempre di più. La padronanza di un software CAD è un prerequisito fondamentale per la modellazione, mentre il file modellato è necessario per la stampa 3D. In parole semplici, per stampare un oggetto in 3D, bisogna prima di tutto modellarlo, creandone la copia digitale in formato STL, leggibile dalla stampante.</p>
+  </div>
+</div>
+	
+<div class="container_list">
+	<h2>2) File .stl</h2>
+  <img class="image_list" src="img/stl-rabbit.jpg" style="width: 20rem;"/>
+  <div class="text_list">
+    <p>Un formato STL rappresenta la geometria della superficie di un oggetto in tre dimensioni. Questo formato però non definisce la texture, il colore o altri parametri che possiamo trovare in un modello CAD (Computer-Aided Drafting). Questa rappresentazione numerica è costituita da un mosaico di triangoli, ciascuno dei quali ha una posizione nota dei suoi tre vertici. La qualità di stampa 3D è intrinsicamente legata alla granularità dei dettagli delle facce dei triangoli. Aumentando la risoluzione e la dimensione di un file, aumenterà di conseguenza il numero di triangoli sulla superficie del modello 3D. Attenzione però che se la risoluzione è troppo elevata, il file risulterà troppo grande e dettagliato così che non potrà essere stampato in 3D.</p>
+	</div>	
+</div>	
+<div class="container_list">		
+	<img class="image_list" src="img/stl.png" style="width: 20rem;"/>
+	<div class="text_list">
+    <p>Sebbene esistano numerosi tipi di file che le stampanti 3D utilizzano per convertire dei modelli 3D in un file compatibile con la fabbricazione additiva (Obj, Amf, ecc..), i file STL sono diventati una norma e sono i più utilizzati. La maggior parte dei programmi CAD permettono di convertire qualsivoglia modello 3D in formato STL. Ne esistono di diversi tipi, sia open source sia proprietari e tra i più famosi possiamo trovare CURA, Slic3R e Repetier host. In questi software si possono impostare tutti i dati della stampante 3D e molti parametri per la stampa, come lo spessore del layer, l'infill, la velocità di stampa. Inseriti tutti i parametri si può mandare in stampa l'oggetto salvando il file in un formato apposito che possa essere letto dalla stampante 3D, il G-Code.</p>
+  </div>
+</div>
+		
+<div class="container_list">
+	<h2>3) Slicing & gcode</h2>
+  <img class="image_list" src="img/boat-stl.png" style="width:35rem;"/>
+  <div class="text_list">
+    <p style="padding-top:5rem;">Slice tradotto dall’inglese significa “affettare”, nella fase di slicing, il modello in tre dimensioni in formato *.stl viene diviso in sottilissimi strati orizzontali. Vi sarà un primo strato che è l’equivalente delle nostre fondamenta (in gergo il primo layer) e via via gli seguiranno tutti gli altri strati uno sull’altro. Questa serie di strati, che uno sull’altro compongono l’intero modello, determinano anche i movimenti e la quantità di plastica che la stampante deve rilasciare sul piatto. Il depositarsi strato su strato del materiale e la conseguente creazione di un oggetto è la vera e propria stampa 3D. Una volta che lo slicer elabora i movimenti da eseguire, li trasforma in formato *.gcode: "il linguaggio delle stampanti".</p>
+  </div>
+</div>	
+<div class="container_list" style="padding-top:5rem;">		
+	<img class="image_list" src="img/gcode.png" style="width:25rem;"/>
+	<div class="text_list">
+    <p style="padding-top:0.9rem;">Il Gcode contiene i movimenti dei motori sugli assi x, y, z; l’avanzamento e la ritrazione del filamento. Il movimento sull’asse z avviene solo nel passaggio tra un layer e il successivo o in casi particolari definibili in impostazioni avanzate. Prima infatti si è omesso che nella fase di slicing è possibile intervenire e modificare  una serie innumerevole di parametri. Possiamo variarli in funzione delle caratteristiche tecniche che vogliamo per il nostro oggetto, per migliorarne la stampa, per trovare le condizioni ideali di ogni filamento specifico. L’intervento umano, e l’elaborazione di una strategia nell’impostare i valori corretti all’interno dello slicer, sono determinanti per arrivare ad ottenere il miglior risultato (tenendo conto che in molti casi la perfezione si gioca su decimi di millimetro). Anche l’orientamento del modello sul letto di stampa, quindi spostare, girare, capovolgere, è essenziale in termini di consumo, per utilizzare il minor numero di supporti (plastica che poi viene buttata). Creare un supporto per una parte sospesa, oltre ad essere un consumo ulteriore di materiale, può anche essere fonte di problemi sia nella fase di costruzione, sia nella fase di distaccamento. Ogni supporto porta con se una cicatrice, più o meno evidente in base alla qualità della nostra stampante e alla nostra bravura.</p>
+  </div>
+</div>		
+	
+<div class="container_list" style="padding-top:1.5rem;">
+	<h2>4) Stampa</h2>
+  <img class="image_list" src="img/3d-printed-object.jpg" style="width: 40rem;"/>
+  <div class="text_list">
+    <p>Creato il file *.gcode del nostro modello non resta che mandarlo in stampa. Vi sono molteplici vie tramite cui siamo in grado di comunicare con la stampante: una scheda SD che si inserisce direttamente nella stampante (per trasferirci il file dal computer occorre una chiavetta con adattore); un cavo USB che collega direttamente il pc alla stampante (ciò implica che anche il computer rimanga costantemente acceso fino alla fine della stampa); tramite wi-fi, cosa comune prevalentemente nelle stampenti di livello medio-alto.</p>
+		<p>Prima di iniziare a stampare bisogna livellare il letto di stampa: la precisione è alla base di tutto. Si controlla che tra l’estusore e il piano riesca a passare senza problemi un normale foglio, e ciò deve valere in tutti e 4 gli angoli del piatto. In seguito si seleziona il progetto da realizzare e si attende che si scaldino il nozzle e il bed, ognuno con una sua temperatura specifica. Un oggetto stampato però non è sempre preciso, ma con una superficie ruvida e piena di imperfezioni: qui entra in gioco la finitura manuale. 
+</p>
+  </div>
+</div>
+		
+<div  style="padding-bottom:4rem;" class="container_list">
+	<h2>5) Finitura manuale</h2>
+  <img class="image_list" src="img/post-processing.jpg" style="width: 40rem;"/>
+  <div class="text_list">
+    <p style="padding-top:2rem;">Le parti prodotte con tecnologie di stampa 3D di solito richiedono un certo grado di trattamento post-produzione, meglio noto come "post-processing". In breve si riferisce ai trattamenti che permettono di migliorare l'estetica di una stampa. Spesso riguardano la rimozione di supporti o materiale in eccesso, il lavaggio e l'indurimento, la levigatura o la lucidatura di un modello per la pittura o la colorazione.
+La post-produzione può essere costosa, soprattutto se eseguita a mano, insostenibile nella produzione in serie.</p>
+		<p>Siamo in grado di identificare 5 passaggi nella postproduzione, sebbene non tutti i passaggi siano necessari per tutti i progetti: la pulizia di materiale in eccesso, la riparazione di parti deboli o staccate, il curing tramite polimerizzazione per conferire proprietà meccaniche ottimali, la finitura superficiale tramite levigatura e la colorazione (procedura comune nelle stampe casalinghe).</p>
+  </div>
+</div>
+	</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Sito eseguito per l'esposizione al colloquio di maturità da:
+      </p>
+			<ul class="no-bullets">
+        <li>
+        	<p>Silvia Ferrari</p>
+        </li>
+        <li>
+          <p>Elisa Romano</p>
+        </li>
+        <li>
+          <p>Francesca Vergallo</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section: Links -->
+    <section class="">
+      <div class="row">
+        <!-- 
+				<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div> 
+				-->
+      </div>
+    </section>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+</footer>
+
+<!-- Library initialization NON SPOSTARLO DAL FONDO DEL FILE VI PREGO--> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
 </html>
